@@ -1,0 +1,135 @@
+/*********************************
+ * Push-footer css
+ */
+* { margin: 0; }
+html, body { height: 100%; }
+#footer, #push { height: 4em; }
+#wrapper { min-height: 100%; height: auto !important; height: 100%; margin: 0 auto -4em; }
+
+/********************************
+ * Base page layout
+ */
+#topping { height: 16px; }
+#topping, #footer {
+  width: 100%;
+  margin-left: -20px;
+  padding-right: 20px;
+  background: #505050 url('../img/top-background.jpg') repeat;
+}
+@media (max-width: 767px) { #topping, #footer { padding-right: 40px; } }
+
+body { background: #F6F6F6 url('../img/body-background.jpg') repeat; }
+#content { padding-bottom: 20px; }
+#footer .container { float: right; }
+
+/*********************************
+ * Header logo/title
+ */
+#header { padding: 20px 0 10px 0; margin-top: 20px; white-space: nowrap; }
+#header .logo { float: left; margin-right: 15px;}
+#header .title { margin-top: 58px; text-shadow: 0px 1px 1px #999;}
+@media (max-width: 690px) { 
+  #header .logo { float: none;  } 
+  #header .title { margin-top: 0;  } 
+}
+
+/*********************************
+ * Bootstrap-like navbar brand
+ */
+.navbar .brand { float: right; color: #ccc; font-weight: bold; text-shadow: 0 -1px 1px rgba(0, 0, 0, .5); }
+.navbar .brand { -webkit-transition: all .2s linear; -moz-transition: all .2s linear; transition: all .2s linear; }
+.navbar .brand:hover { color: #bbb; }
+@media (max-width: 967px) { .navbar .brand { float: left; } }
+
+/*********************************
+ * Bootstrap fiddling
+ */
+.pagination { width: 250px; margin: 0 auto; }
+.page-header { margin: 0; border-bottom: 1px solid #ccc; }
+hr { border-top-color: #ccc; border-bottom-color: #ddd; }
+.img-circle { border: 1px solid #ccc; }
+
+/*********************************
+ * Facebook comments fix
+ */
+.fbcomments, .fb_iframe_widget, .fb_iframe_widget[style], .fb_iframe_widget iframe[style], .fb_iframe_widget > span, .fbcomments iframe[style] {
+  width: 100% !important;
+}
+
+/*********************************
+ * GUI window layout
+ */
+.gui-window {
+  border: 1px solid #7f7f7f;
+  border-radius: 5px 5px 0 0;
+}
+
+.gui-window-topbar {
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid #696969;
+  background: url('../img/osx-topbar-background.png') repeat-x;
+}
+
+.gui-window-topbar-title {
+  float: left;
+  width: 100%;
+  font-size: 12px;
+  font-family: 'Lucida Grande', Tahoma, Verdana, Arial, sans-serif;
+  text-align: center;
+}
+
+.gui-window-topbar-buttons {
+  width: 57px;
+  height: 21px;
+  margin: 0 5px ;
+  background: url('../img/osx-topbar-buttons.png') no-repeat;
+}
+
+.gui-window-inner {
+  height: 300px;
+  background: #fff;
+}
+
+.gui-window-leftbar {
+  width: 34px;
+  height: 100%;
+  overflow: hidden;;
+  background: #d4d0c8;
+  border-right: 1px solid #7f7f7f;
+ }
+
+.gui-window-bottombar {
+  height: 21px;
+  border-top: 1px solid #696969;
+  background: url('../img/osx-topbar-background.png') repeat-x;
+}
+
+.gui-tool { 
+  float: left;
+  display: block; 
+  width: 24px; height: 24px; 
+  margin: 2px; padding: 2px;  
+  background-position: center center;
+  background-repeat: no-repeat;;
+  border: 1px solid transparent;
+}
+.gui-tool:hover { border: 1px solid #777; border-radius: 2px;}
+
+.gui-tool-cursor { background-image: url('../img/gui/gui-tool-cursor.png'); }
+.gui-tool-class { background-image: url('../img/gui/gui-tool-class.png'); }
+.gui-tool-function { background-image: url('../img/gui/gui-tool-function.png'); }
+.gui-tool-inheritance { background-image: url('../img/gui/gui-tool-inheritance.png'); }
+.gui-tool-aggregation { background-image: url('../img/gui/gui-tool-aggregation.png'); }
+.gui-tool-composition { background-image: url('../img/gui/gui-tool-composition.png'); }
+.gui-tool-dependency { background-image: url('../img/gui/gui-tool-dependency.png'); }
+
+
+.page {
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.06) inset;  
+  padding: 10px 10px;
+  overflow: hidden;
+  margin-bottom: 20px
+}
+
+
