@@ -33,6 +33,11 @@ body { background: #F6F6F6 url('../img/body-background.jpg') repeat; }
   #header .title { margin-top: 0;  } 
 }
 
+.thumbnail { background-color: #fefefe; }
+ul.unstyled li { margin-left: 15px;}
+.thumbnail h4, .thumbnail h3 { margin-left: 10px;}
+
+
 /*********************************
  * Bootstrap-like navbar brand
  */
