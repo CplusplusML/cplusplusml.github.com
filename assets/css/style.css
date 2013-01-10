@@ -41,10 +41,20 @@ ul.unstyled li { margin-left: 15px;}
 /*********************************
  * Bootstrap-like navbar brand
  */
-.navbar .brand { float: right; color: #ccc; font-weight: bold; text-shadow: 0 -1px 1px rgba(0, 0, 0, .5); }
+.navbar .brand { display: none; }
+.navbar .brand { float: right; color: #ccc; font-weight: bold; 
+   text-shadow: 0 0px 1px rgba(15, 15, 15, 1);
+    text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff; 
+
+ }
 .navbar .brand { -webkit-transition: all .2s linear; -moz-transition: all .2s linear; transition: all .2s linear; }
 .navbar .brand:hover { color: #bbb; }
-@media (max-width: 967px) { .navbar .brand { float: left; } }
+@media (max-width: 967px) { .navbar .brand { float: left; display: block; } }
+.navbar ul.nav li.nav-icon {font-size: 20px;}
 
 /*********************************
  * Bootstrap fiddling

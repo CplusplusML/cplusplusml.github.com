@@ -40,7 +40,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </a>
-              <a class="brand" href="/">{{ site.title }}</a>
+              <a class="brand" data-toggle="collapse" data-target=".nav-collapse">Navigation</a>
               <div class="nav-collapse collapse">
                 <ul class="nav">
                   {% assign url = '/index.html' %}{% assign title = 'Home' %}
@@ -53,6 +53,11 @@
                   {% include nav_link %}
                   {% assign url = '/team.html' %}{% assign title = 'Team' %}
                   {% include nav_link %}
+                </ul>
+                <ul class="nav pull-right">
+                  <li class="nav-icon"><a href=""><i class="icon-github"></i></a></li>
+                  <li class="nav-icon"><a href=""><i class="icon-facebook"></i></a></li>
+                  <li class="nav-icon"><a href=""><i class="icon-twitter"></i></a></li> 
                 </ul>
               </div>
             </div>
