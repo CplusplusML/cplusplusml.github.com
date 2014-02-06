@@ -1,7 +1,0 @@
-{% if page.url == url %}
-  <li class="active"><a href="{{url}}" class="active">{{title}}</a></li>
-{% else %}
-  <li><a href="{{ BASE_PATH }}{{url}}">{{title}}</a></li>
-{% endif %}
-{% assign url = nil %}
-{% assign title = nil %}

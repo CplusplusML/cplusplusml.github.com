@@ -1,28 +1,52 @@
----
-layout: nil
-title : Atom Feed
----
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>{{ site.title }}</title>
- <link href="{{ site.production_url }}/atom.xml" rel="self"/>
- <link href="{{ site.production_url }}"/>
- <updated>{{ site.time | date_to_xmlschema }}</updated>
- <id>{{ site.production_url }}</id>
+ <title>C++ML</title>
+ <link href="http://cplusplusml.github.com/atom.xml" rel="self"/>
+ <link href="http://cplusplusml.github.com"/>
+ <updated>2014-02-06T21:28:48+01:00</updated>
+ <id>http://cplusplusml.github.com</id>
  <author>
-   <name>{{ site.author.name }}</name>
-   <email>{{ site.author.email }}</email>
+   <name>C++ML Team</name>
+   <email>contact@cplusplus.org</email>
  </author>
 
- {% for post in site.posts %}
+ 
  <entry>
-   <title>{{ post.title }}</title>
-   <link href="{{ site.production_url }}{{ post.url }}"/>
-   <updated>{{ post.date | date_to_xmlschema }}</updated>
-   <id>{{ site.production_url }}{{ post.id }}</id>
-   <content type="html">{{ post.content | xml_escape }}</content>
+   <title>Documentation Update</title>
+   <link href="http://cplusplusml.github.com/2013/01/05/Documentation-update"/>
+   <updated>2013-01-05T00:00:00+01:00</updated>
+   <id>http://cplusplusml.github.com/2013/01/05/Documentation-update</id>
+   <content type="html">&lt;p&gt;The documentation regarding the whole &lt;em&gt;C++ML&lt;/em&gt; standard is now &lt;strong&gt;available&lt;/strong&gt; !&lt;/p&gt;
+
+&lt;p&gt;We recently integrated a documentation generator and were able to produce a user-friendly documentation. It is available in the above menu or at the fallowing address. &lt;a href=&quot;http://www.cplusplusml.org/documentation.html&quot;&gt;http://www.cplusplusml.org/documentation.html&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Again, feel free to send any bug report or suggestion to contact&amp;lt;at&amp;gt;cplusplusml.org&lt;/p&gt;</content>
  </entry>
- {% endfor %}
+ 
+ <entry>
+   <title>Happy New Year !</title>
+   <link href="http://cplusplusml.github.com/2013/01/01/Happy-New-Year-%21"/>
+   <updated>2013-01-01T00:00:00+01:00</updated>
+   <id>http://cplusplusml.github.com/2013/01/01/Happy-New-Year-!</id>
+   <content type="html">&lt;h4 id=&quot;the_whole_cml_team_wishes_you_an_happy_new_year_&quot;&gt;The whole C++ML team wishes you an happy new year !&lt;/h4&gt;
+
+&lt;p&gt;&lt;strong&gt;2012&lt;/strong&gt; has been a busy year and we are glad to annouce that despite the tight schedule, we excpect the &lt;strong&gt;first stable release&lt;/strong&gt; of our Graphical Editor to be released soon.&lt;/p&gt;
+
+&lt;p&gt;May &lt;strong&gt;2013&lt;/strong&gt; be a year of excinting new projects. With the help of &lt;em&gt;C++ML&lt;/em&gt; conception.&lt;/p&gt;
+&lt;hr /&gt;
+&lt;p&gt;The C++ML Team&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Welcome</title>
+   <link href="http://cplusplusml.github.com/2012/12/10/Welcome"/>
+   <updated>2012-12-10T00:00:00+01:00</updated>
+   <id>http://cplusplusml.github.com/2012/12/10/Welcome</id>
+   <content type="html">&lt;p&gt;The new website is out. Also some major improvement were commited to the unstable branches of our github repository. Don’t forget to &lt;a href=&quot;https://github.com/CplusplusML/CplusplusML&quot;&gt;check it out !&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Always feel free to send any bug report or suggestion to contact&amp;lt;at&amp;gt;cplusplusml.org&lt;/p&gt;</content>
+ </entry>
+ 
  
 </feed>
